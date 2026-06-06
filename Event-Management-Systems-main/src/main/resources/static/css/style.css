@@ -215,3 +215,27 @@ a { text-decoration: none; }
 .quote-box { position: sticky; top: 80px; }
 .quote-row { display: flex; justify-content: space-between; padding: .4rem 0; border-bottom: 1px dashed #e0dcec; }
 .quote-total { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+
+/* Interactive Rating Stars */
+
+.rating-input {
+    display: inline-flex;
+    gap: 4px;
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
+.rating-input .star-label {
+    cursor: pointer;
+    color: #d3cce3;
+    transition: color .12s ease,
+    transform .12s ease;
+}
+
+.rating-input .star-label:hover {
+    transform: scale(1.12);
+}
+
+.rating-input .star-label.filled {
+    color: var(--accent);
+}
